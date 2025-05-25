@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pagina web para agendamiento de descargue de Vehículos">
+    <title>PPAGENDAR</title>
+      <p>Has iniciado sesión correctamente.</p>
+      <h2>¡Bienvenido a ppagendar!</h2>
+    <link rel="shortcut icon" href="agenda.png">
+    <link rel="stylesheet" href="style.css" />
+    <p class="text-1"> Agendamiento de citas para descargue de Vehículos</p>
+</head>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="">Quienés Somos</a>
+        <a href="contactenos.html">Contactenos</a>
+        <a href="registro.html">Registrarse</a>
+    </nav>
+
+    <script src="script.js"></script>
+    <header><img src="C:\ppagendar\imagenes\logo.png" alt=""></header>
+    <p>Evite demoras en tu entrega, agenda tu cita para descargue aqui:</p>
+
+  <title>Bienvenido</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  
+  
+<div>
+
+    <div class="form-container">
+        <h1>Agendar Cita para descargue Vehícular</h1>
+        <form action="/agendar" method="post">
+
+    <input type="text" id="Empresa" placeholder="Nombre de la Empresa" required><br>
+    <input type="text" id="conductor" placeholder="Nombre del conductor" required><br>
+    <input type="text" id="placa" placeholder="Placa del vehículo" required><br>
+    <input type="number" id="bultos" placeholder="Número de bultos" required><br>
+    <label for="tipo">Tipo de Mercancía:</label>
+    <select id="tipo" name="tipo" required>
+    <option value="">Seleccione</option>
+    <option value="Alimentos">Alimentos</option>
+    <option value="Electrónica">Electrónica</option>
+    <option value="Textil">Textil</option>
+    <option value="Construcción">Construcción</option>
+   
+    <label for="fecha">Fecha de Entrega:</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <label for="hora">Hora Inicial de Entrega:</label>
+    <input type="time" id="hora" name="hora" required>
+
+    <label for="hora">Hora Final de Entrega:</label>
+    <input type="time" id="hora" name="hora" required>
+    <form action="Registrar">
+       <button type="submit">Agendar</button>
+
+    </form>
+
+</body>
+ 
+ 
+ <button type="submit">Agendar</button> 
+
+        
+
+  <script src="script.js"></script>  
+  
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+
+</html>
